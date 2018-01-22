@@ -187,6 +187,10 @@ export default class FlexDimensionsBasics extends React.Component {
     Alert.alert('You tapped the button, bitch!')
   }
 
+  ComingSoon() {
+    Alert.alert('Under development')
+  }
+
   render() {
     return (
       <View style={{flex: 1}}>
@@ -303,19 +307,19 @@ export default class FlexDimensionsBasics extends React.Component {
         </View>
         <View style={{flex: 0.75, backgroundColor: 'rgba(247,247,247,1.0)', flexDirection: 'row'}}>
           <View style={styles.bottomLine}>
-          <Text>🏚</Text>
+          <Button onPress={this.ComingSoon} title="🏚"/>
           </View>
           <View style={styles.bottomLine}>
-          <Text>🔍</Text>
+          <Button onPress={this.ComingSoon} title="🔍"/>
           </View>
           <View style={styles.bottomLine}>
-          <Text>➕</Text>
+          <Button onPress={this.ComingSoon} title="➕"/>
           </View>
           <View style={styles.bottomLine}>
-          <Text>❤</Text>
+          <Button onPress={this.ComingSoon} title="❤"/>
           </View>
           <View style={styles.bottomLine}>
-          <Text>Me</Text>
+          <Button onPress={this.ComingSoon} title="Me"/>
           </View>
         </View>
       </View>
