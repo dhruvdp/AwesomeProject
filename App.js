@@ -2,19 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View , Image, TextInput, Button, Alert, ScrollView} from 'react-native';
 import ScrollToTop from 'react-native-scroll-to-top';
 
-// export default class App extends React.Component {
-//   render() {
-//     return (
-//       <View style={styles.container}>
-//         <Text>Open up App.js to start working on your app!</Text>
-//         <Text>Changes you make will automatically reload.</Text>
-//         <Text>Shake your phone to open the developer menu.</Text>
-//         <Text>YOLO1</Text>
-//       </View>
-//     );
-//   }
-// }
-
 class Bananas extends React.Component {
   render() {
     let pic = {
@@ -46,23 +33,6 @@ class Blink extends React.Component {
     );
   }
 }
-
-// export default class LotsOfGreetings extends React.Component {
-//   render() {
-//     return (
-//       <View style={styles.container}>
-//         {/* <Greeting name='Dhruv' />
-//         <Greeting name='Sunday' />
-//         <Greeting name='TV' />
-//         <Bananas></Bananas>
-//         <Blink text="YOLO"></Blink> */}
-//         <View style={{backgroundColor: 'orange', height: 150, width: 150}} />
-//         <View style={{backgroundColor: '#f2f2f2', height: 150, width: 150}} />
-//         <View style={{backgroundColor: 'green', height: 150, width: 150}} />
-//       </View>
-//     );
-//   }
-// }
 
 class Greeting extends React.Component {
   render() {
@@ -200,18 +170,165 @@ class PizzaTranslator extends React.Component {
   }
 }
 
-export default class Dhruv extends React.Component {
+// export default class Dhruv extends React.Component {
+//   render() {
+//     return (
+//       <View>
+//         <Text style={styles.sectionHeader}>My Instagram</Text>
+//         <PizzaTranslator />
+//       </View>
+//     );
+//   }
+// }
+
+export default class FlexDimensionsBasics extends React.Component {
+
+  Dhruv() {
+    Alert.alert('You tapped the button, bitch!')
+  }
+
   render() {
     return (
-      <View>
-        <Text style={styles.sectionHeader}>My Instagram</Text>
-        <PizzaTranslator />
+      <View style={{flex: 1}}>
+        <View style={{flex: 0.75, backgroundColor: 'rgba(247,247,247,1.0)'}}>
+          <Text style={styles.sectionHeaderTemp}>My Instagram</Text>
+        </View>
+        <View style={{flex: 8, backgroundColor: 'white'}}>
+            <ScrollView>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/diwali.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/1.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/2.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/3.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/4.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image ssource={require('/Applications/AMPPS/www/AwesomeProject/5.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/6.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/7.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/8.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/9.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/10.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/11.jpg')} style={styles.picImage}/>
+              </View>
+              <View style={{alignItems:'center', flexDirection:'column'}}>
+                  <Button
+                      onPress={this.Dhruv}
+                      title="Scroll me plz"
+                      color="#841584"
+                    />
+                  <Image source={require('/Applications/AMPPS/www/AwesomeProject/12.jpg')} style={styles.picImage}/>
+              </View>
+          </ScrollView>
+        </View>
+        <View style={{flex: 0.75, backgroundColor: 'rgba(247,247,247,1.0)', flexDirection: 'row'}}>
+          <View style={styles.bottomLine}>
+          <Text>🏚</Text>
+          </View>
+          <View style={styles.bottomLine}>
+          <Text>🔍</Text>
+          </View>
+          <View style={styles.bottomLine}>
+          <Text>➕</Text>
+          </View>
+          <View style={styles.bottomLine}>
+          <Text>❤</Text>
+          </View>
+          <View style={styles.bottomLine}>
+          <Text>Me</Text>
+          </View>
+        </View>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  bottomLine: {
+    flex:1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
   container: {
     flex: 1,
     backgroundColor: 'white',
@@ -241,6 +358,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     fontWeight: 'bold',
     backgroundColor: 'rgba(247,247,247,1.0)',
+    textAlign: 'center'
+  },
+  sectionHeaderTemp: {
+    paddingTop: 30,
+    fontSize: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontWeight: 'bold',
     textAlign: 'center'
   }
 });
